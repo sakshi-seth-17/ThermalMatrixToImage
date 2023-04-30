@@ -1,0 +1,8 @@
+{
+	"Queries": {
+		"blackbox": "select datetime(substr(ImgRef,7,4)||'-'||substr(ImgRef,4,2)||'-'||substr(ImgRef,1,2) ||' '|| substr(ImgRef,12,2)||':'|| substr(ImgRef,15,2)||':'|| substr(ImgRef,18,2)) as DATE_, Thermal from blackbox where DATE_ IS NOT NULL and DATE_ >= DATE('{}')",
+		"wendy_king": "select datetime(substr(ImgRef,7,4)||'-'||substr(ImgRef,4,2)||'-'||substr(ImgRef,1,2) ||' '|| substr(ImgRef,12,2)||':'|| substr(ImgRef,15,2)||':'|| substr(ImgRef,18,2)) as DATE_, Thermal from wendy_king where DATE_ IS NOT NULL and DATE_ >= DATE('{}')"
+		
+	}
+	
+}
